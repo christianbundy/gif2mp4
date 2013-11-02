@@ -24,3 +24,9 @@ gif2mp4 cat.gif
 ```
 gif2mp4 cat.gif kitty.mp4
 ```
+
+## uninstallation
+
+```sh
+brew uninstall gif2mp4
+```
