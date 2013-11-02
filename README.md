@@ -5,7 +5,7 @@ Converting from an animated GIF to MP4 should be quick and easy.
 ## installation
 
 ```sh
-brew tap ChristianBundy/ChristianBundy
+brew tap ChristianBundy/tap
 brew install gif2mp4
 ```
 
