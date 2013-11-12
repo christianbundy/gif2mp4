@@ -14,8 +14,8 @@ if [ ! -z $1 ]; then
 		if [ ! -d "./.gif2mp4" ]; then
 			mkdir '.gif2mp4';
 		fi
-		convert $input ./.gif2mp4/$input%03d.png
-		ffmpeg -i ./.gif2mp4/$input%03d.png $output
+		convert $input ./.gif2mp4/$file%03d.png
+		ffmpeg -i ./.gif2mp4/$file%03d.png -vf "scale=trunc(in_w/2)*2:trunc(in_h/2)*2" $output
 		rm -rf ./.gif2mp4
 	else
 		echo 'Input file "'$input'" does not exist';
